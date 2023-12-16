@@ -26,7 +26,7 @@ export const Header = () => {
         <span>в Adobe Illustrator</span>
       </div>
 
-      <img className="header_catImg" src={HEADER_IMAGES.CAT} />
+      <img className="header_catImg" src={HEADER_IMAGES.CAT} alt="cat" />
     </div>
   );
 };
