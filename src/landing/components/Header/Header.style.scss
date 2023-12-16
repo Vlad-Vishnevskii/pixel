@@ -1,3 +1,126 @@
 .header {
-  background: var(--Primary-muted, #f9ab63);
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  min-height: 496px;
+  background: #f9ab63;
+
+  &_top {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_orderBtn {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #f9ab63;
+    border: none;
+  }
+
+  &_rightBg {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 247px;
+    height: 176px;
+    background: url('./assets/mobile-right-bg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  &_leftBg {
+    position: absolute;
+    display: block;
+    top: 262px;
+    left: 0;
+    width: 247px;
+    height: 176px;
+    background: url('./assets/mobile-left-bg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  &_orderBtn {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #f9ab63;
+    color: #ffffff;
+    font-family: Garet;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 850;
+    line-height: 18px;
+    letter-spacing: 0.16px;
+  }
+
+  &_title {
+    position: relative;
+    z-index: 2;
+    color: #414143;
+    font-family: Garet;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 850;
+    line-height: normal;
+  }
+
+  &_titleFrame {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    padding: 6px 14px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid #f9ab63;
+    background: #fff;
+    color: #414143;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.016px;
+    margin-bottom: 10px;
+
+    span {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 1;
+      bottom: -10px;
+      right: -10px;
+      content: '';
+      width: 154px;
+      height: 30px;
+      background: transparent;
+      border-radius: 50px;
+      border: 1px solid #ffffff;
+    }
+  }
+
+  &_catImg {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+
+    @media (max-width: 359px) {
+      margin-top: 40px;
+    }
+  }
 }

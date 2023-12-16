@@ -1,3 +1,15 @@
 body {
   margin: 0;
 }
+
+.landing {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
