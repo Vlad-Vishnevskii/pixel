@@ -6,7 +6,9 @@
 
 @mixin active {
   @media (hover: hover) and (min-width: 1024px) {
-    @content;
+    &:active {
+      @content;
+    }
   }
 }
 

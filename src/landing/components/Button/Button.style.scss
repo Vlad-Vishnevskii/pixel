@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 28px;
+
+  font-family: PT Sans;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  letter-spacing: 0.18pz;
+
+  background-color: #34a3ff;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+  @media (hover: hover) and (min-width: 1024px) {
+    &:hover {
+      background-color: #2D98F1;
+    }
+  }
+  
+  @media (hover: hover) and (min-width: 1024px) {
+    &:active {
+      background-color: #2D98F1;
+    }
+  }
+
+  // @include hover {
+  //   background-color: #2D98F1;
+  // }
+  
+  // @include active {
+  //   background-color: #2D98F1;
+  // }
+}
