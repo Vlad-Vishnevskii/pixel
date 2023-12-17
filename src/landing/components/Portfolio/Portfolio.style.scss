@@ -1,0 +1,63 @@
+.portfolio {
+  padding-bottom: 27px;
+  padding-top: 40px;
+  background-color: #282828;
+  color: #fff;
+
+  &_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 266px;
+      height: 98px;
+      margin-bottom: 32px;
+      background: url('./assets/portfolio-decor.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_title {
+    margin: 0 0 23px 0;
+    font-size: 24px;
+    font-weight: 850;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+  }
+
+  &_student {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    margin-bottom: 24px;
+  }
+
+  &_student img {
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  &_studentName {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 850;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+  }
+
+  &_workImg {
+    border-radius: 12px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .button {
+    margin-top: 12px;
+  }
+}

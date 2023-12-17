@@ -5,3 +5,4 @@ export * from './AboutSchool';
 export * from './Faq';
 export * from './Price';
 export * from './Review';
+export * from './Portfolio';

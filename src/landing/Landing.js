@@ -3,7 +3,7 @@ import './Landing.styles.scss';
 import './Mixins.styles.scss';  // ?
 import './Container.styles.scss';
 import './Section.styles.scss';
-import { Header, Footer, Form, AboutSchool, Faq, Price, Review } from './components';
+import { Header, Footer, Form, AboutSchool, Faq, Price, Review, Portfolio } from './components';
 import { REVIEW_IMAGES } from './components/Review/Review.images';
 
 
@@ -11,7 +11,8 @@ export const Landing = () => {
   return (
     <div className="landing">
       <Header />
-      <Review 
+      <Portfolio />
+      <Review
         mod="review--dark"
         nameStudent="Виктория Пивкина"
         src={REVIEW_IMAGES.STUDENT5}
@@ -31,7 +32,7 @@ export const Landing = () => {
           },
         ]}
       />
-      <Price/>
+      <Price />
 
       <section className="section section--orange">
         <div className="container">

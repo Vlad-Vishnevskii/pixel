@@ -3,18 +3,15 @@
   justify-content: center;
   align-items: center;
   padding: 14px 28px;
-
   font-family: PT Sans;
   font-size: 18px;
   line-height: 21px;
   color: #fff;
   letter-spacing: 0.18pz;
-
   background-color: #34a3ff;
   border: none;
   border-radius: 16px;
   cursor: pointer;
-
   transition: background-color 0.3s ease;
 
   @media (hover: hover) and (min-width: 1024px) {
@@ -36,4 +33,27 @@
   // @include active {
   //   background-color: #2D98F1;
   // }
+
+  &--border {
+    padding: 7px 17px;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: opacity 0.3s ease;
+    
+    @media (hover: hover) and (min-width: 1024px) {
+      &:hover {
+        background-color: transparent;
+        opacity: 0.7;
+      }
+    }
+    
+    @media (hover: hover) and (min-width: 1024px) {
+      &:active {
+        background-color: transparent;
+        opacity: 0.7;
+      }
+    }
+  }
 }

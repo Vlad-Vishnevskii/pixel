@@ -35,16 +35,18 @@
       top: 50%;
       transform: translateY(-50%);
       left: 12px;
-      background-size: contain;
-      background-repeat: no-repeat;
     }
   }
-
+  
   &--name label::before {
     background: url('./assets/icon-cat.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
-
+  
   &--login label::before {
     background: url('./assets/icon-tg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
