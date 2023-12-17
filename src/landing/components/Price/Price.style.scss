@@ -1,0 +1,88 @@
+.price {
+  padding-top: 120px;
+  background-color: #f9ab63;
+
+  &_titleWrapper {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 32px;
+    padding: 16px;
+    box-shadow: 5px 5px 0 #000;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -88px;
+      right: 5px;
+      width: 144px;
+      height: 98px;
+      background: url('./assets/cat-price.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+  }
+  
+  &_title {
+    margin: 0 0 12px 0;
+    font-size: 24px;
+    font-weight: 850;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+    text-align: center;
+  }
+  
+  &_titlePrice {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 850;
+    text-align: center;
+  }
+
+  &_installment {
+    font-size: 18px;
+    font-weight: 850;
+    line-height: 18px;
+    letter-spacing: 0.09px;
+  }
+
+  &_installmentTitle {
+    margin: 0 0 6px 0;
+    text-align: center;
+  }
+  
+  &_installmentPrice {
+    margin: 0 0 12px 0;
+    text-align: center;
+
+  }
+
+  &_list {
+    max-width: 268px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+  }
+
+  &_item {
+    position: relative;
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.06px;
+    padding-left: 19px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: currentColor;
+      top: 6px;
+      left: 9px;
+    }
+  }
+}

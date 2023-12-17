@@ -3,3 +3,4 @@ export * from './Footer';
 export * from './Form';
 export * from './AboutSchool';
 export * from './Faq';
+export * from './Price';
