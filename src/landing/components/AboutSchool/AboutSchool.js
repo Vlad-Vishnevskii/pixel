@@ -1,5 +1,4 @@
 import React from 'react';
-// import { ABOUT_SCHOOL_IMAGES } from './AboutSchool.images';
 
 import './AboutSchool.style.scss';
 
