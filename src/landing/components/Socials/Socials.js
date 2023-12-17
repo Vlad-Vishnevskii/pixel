@@ -1,41 +1,23 @@
 import React from 'react';
-import { SOCIALS_IMAGES } from './Socials.images';
+import { SOCIALS_TEXT_CONTENT } from './Socials.constans';
 
 import './Socials.style.scss';
 
 export const Socials = () => {
   return (
     <ul className="socials">
-      <li className="socials_item">
-        <a className="socials_link" href="#/" aria-label="Перейти на страницу Вконтакте" rel="nofollow noopener noreferrer" target="_blank">
-          <img
-            src={SOCIALS_IMAGES.VK}
-            alt="Вконтакте"
-            width={26}
-            height={26}
-          />
-        </a>
-      </li>
-      <li className="socials_item">
-        <a className="socials_link" href="#/" aria-label="Перейти на страницу Youtube" rel="nofollow noopener noreferrer" target="_blank">
-          <img
-            src={SOCIALS_IMAGES.YOUTUBE}
-            alt="Youtube"
-            width={26}
-            height={26}
-          />
-        </a>
-      </li>
-      <li className="socials_item">
-        <a className="socials_link" href="#/" aria-label="Перейти на страницу Instagram" rel="nofollow noopener noreferrer" target="_blank">
-          <img
-            src={SOCIALS_IMAGES.INSTAGRAM}
-            alt="Instagram"
-            width={26}
-            height={26}
-          />
-        </a>
-      </li>
+      { SOCIALS_TEXT_CONTENT.map((item) => (
+        <li className="socials_item" key={item.id}>
+          <a className="socials_link" href="#/" aria-label={item.ariaLabel} rel="nofollow noopener noreferrer" target="_blank">
+            <img
+              src={item.src}
+              alt={item.alt}
+              width={26}
+              height={26}
+            />
+          </a>
+        </li>
+      ))}
     </ul>
   );
 };
