@@ -12,9 +12,9 @@ export const DekorLine = () => {
       <path
         d="M46.3834 9.79197C49.6579 12.8131 52.3396 16.8093 52.5642 21.2597C52.7889 25.7101 49.8921 30.4711 45.4991 31.2312C40.2935 32.1347 35.4846 26.9194 35.3459 21.6373C35.2073 16.3552 38.5582 11.5367 42.6405 8.1906C51.3835 1.02986 64.161 -0.815304 74.5723 3.58248C84.5677 7.80819 91.9579 17.6076 93.3729 28.3487"
         stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <mask id="path-2-inside-1_759_102" fill="white">
         <path d="M91.4033 25.7868L91.824 25.5573L93.3202 28.3107L93.9416 25.2418L94.4101 25.3374L93.5257 29.6922L91.4033 25.7868Z" />
@@ -31,18 +31,18 @@ export const DekorLine = () => {
       <path
         d="M6.02881 8.86941C10.7325 4.94964 16.6026 2.4257 22.6974 1.83295C29.1029 1.20674 35.6756 2.72207 41.2255 5.97739"
         stroke="currentColor"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M1 14.2185C1.46846 13.5732 1.9656 12.9518 2.48664 12.3495"
         stroke="currentColor"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

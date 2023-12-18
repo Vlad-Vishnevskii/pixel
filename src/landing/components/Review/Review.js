@@ -26,7 +26,6 @@ export const Review = ({ className, nameStudent, src, texts, works }) => {
               {texts.map((item) => (
                 <p key={item.id}>{item.text}</p>
               ))}
-
             </div>
             <div className="review_quotes review_quotes--end">
               <Quotes />
