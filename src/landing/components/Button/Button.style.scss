@@ -1,4 +1,4 @@
-@import "./../../Mixins.styles";
+@import './../../mixins';
 
 .button {
   display: inline-flex;
@@ -17,11 +17,11 @@
   transition: background-color 0.3s ease;
 
   @include hover {
-    background-color: #2D98F1;
+    background-color: #2d98f1;
   }
 
   @include active {
-    background-color: #2D98F1;
+    background-color: #2d98f1;
   }
 
   &--border {
