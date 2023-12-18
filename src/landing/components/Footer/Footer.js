@@ -16,7 +16,7 @@ export const Footer = () => {
             width={123}
             height={40}
           />
-          <Socials/>
+          <Socials />
         </div>
       </div>
     </div>

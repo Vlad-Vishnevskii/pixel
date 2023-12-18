@@ -20,7 +20,9 @@ export const Price = () => {
             <li className="price_item" key={item.id}>{item.text}</li>
           ))} */}
           <li className="price_item">Доступ к&nbsp;видео урокам навсегда.</li>
-          <li className="price_item">Консультация с&nbsp;преподавателем включена на&nbsp;4&nbsp;месяца.</li>
+          <li className="price_item">
+            Консультация с&nbsp;преподавателем включена на&nbsp;4&nbsp;месяца.
+          </li>
           <li className="price_item">Консультации можно продлевать.</li>
         </ul>
       </div>

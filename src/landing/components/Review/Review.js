@@ -5,8 +5,7 @@ import './Review.style.scss';
 export const Review = ({ className, nameStudent, src, text, works }) => {
   return (
     <div className={`review ${className ? className : ''}`}>
-      <div className="review_decor">
-      </div>
+      <div className="review_decor"></div>
       <div className="review_wrapper">
         <img
           className="review_image"
