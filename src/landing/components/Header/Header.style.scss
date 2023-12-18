@@ -7,11 +7,30 @@
   min-height: 496px;
   background: #f9ab63;
 
+  @include vp-359 {
+    min-height: 535px;
+  }
+
+  * {
+    margin: 0;
+  }
+
   &_top {
     position: relative;
     z-index: 2;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 310px) {
+      gap: 20px;
+      flex-direction: column;
+      justify-content: initial;
+      align-items: flex-start;
+    }
+  }
+
+  &_logo {
+    margin-top: 7px;
   }
 
   &_orderBtn {
@@ -40,22 +59,33 @@
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.2;
+
+    @include vp-359 {
+      width: 341px;
+      height: 227px;
+    }
   }
 
   &_leftBg {
     position: absolute;
     display: block;
-    top: 262px;
-    left: 0;
-    width: 247px;
-    height: 176px;
+    top: 247px;
+    left: 0px;
+    width: 270px;
+    height: 203px;
     background: url('./assets/mobile-left-bg.svg');
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.2;
   }
 
+  &_orderBtnWrapper {
+    position: relative;
+  }
+
   &_orderBtn {
+    position: relative;
+    z-index: 2;
     display: flex;
     padding: 8px 16px;
     justify-content: center;
@@ -63,60 +93,129 @@
     border-radius: 12px;
     background: #f9ab63;
     color: #ffffff;
-    font-family: Garet;
+    font-family: 'Garet';
     font-size: 16px;
     font-style: normal;
     font-weight: 850;
     line-height: 18px;
     letter-spacing: 0.16px;
+
+    @include vp-359 {
+      align-self: flex-end;
+    }
+  }
+
+  &_orderBtnDecor {
+    position: absolute;
+    top: -20px;
+    left: -61px;
+
+    @include vp-359 {
+      display: none;
+    }
+  }
+
+  &_orderBtnDecor2 {
+    position: absolute;
+    top: -21px;
+    right: 66px;
+
+    @include vp-359 {
+      display: none;
+    }
   }
 
   &_title {
     position: relative;
     z-index: 2;
+    margin-top: 20px;
     color: #414143;
     font-family: 'Garet';
     font-size: 38px;
     font-style: normal;
     font-weight: 850;
     line-height: normal;
-  }
 
-  &_titleFrame {
-    position: relative;
-    z-index: 2;
-    display: inline-flex;
-    padding: 6px 14px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 50px;
-    border: 1px solid #f9ab63;
-    background: #fff;
-    color: #414143;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.016px;
-    margin-bottom: 10px;
+    @include vp-359 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
 
     span {
       position: relative;
       z-index: 2;
     }
+  }
+
+  &_titleDecor {
+    position: absolute;
+    z-index: 1;
+    right: -2px;
+    bottom: -20px;
+  }
+
+  &_titleFrame {
+    position: relative;
+    display: flex;
+    width: fit-content;
+
+    span {
+      position: relative;
+      z-index: 3;
+      display: inline-flex;
+      padding: 7px 15px;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: -4px;
+      margin-bottom: 10px;
+      border-radius: 50px;
+      border: 1px solid #f9ab63;
+      background: #fff;
+      color: #414143;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0.016px;
+    }
 
     &::after {
       position: absolute;
-      z-index: 1;
-      bottom: -10px;
-      right: -10px;
+      z-index: 2;
+      bottom: 6px;
+      right: 0;
       content: '';
-      width: 154px;
+      width: 169px;
       height: 30px;
-      background: transparent;
+      background: #f9ab63;
       border-radius: 50px;
       border: 1px solid #ffffff;
+    }
+  }
+
+  &_titleFrameDecor {
+    position: absolute;
+    z-index: 1;
+    bottom: -15px;
+    left: 38px;
+  }
+
+  &_titleFrameStars {
+    position: absolute;
+    z-index: 1;
+    bottom: -25px;
+    left: 80px;
+  }
+
+  &_adobeIcon {
+    position: absolute;
+    top: 181px;
+    right: 30px;
+
+    @include vp-359 {
+      bottom: 55%;
+      top: initial;
     }
   }
 
@@ -126,7 +225,9 @@
     right: 0;
     bottom: 0;
 
-    @media (max-width: 359px) {
+    @include vp-359 {
+      width: 95%;
+      height: auto;
       margin-top: 40px;
     }
   }
