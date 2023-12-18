@@ -3,6 +3,7 @@
 
   &_title {
     margin: 0 0 14px 0;
+    font-family: 'Garet';
     font-size: 24px;
     font-weight: 850;
     line-height: 28px;
@@ -32,21 +33,23 @@
 
   &_item {
     color: #ff9a36;
-
+    
     &:not(:last-child) {
       margin-bottom: 25px;
     }
   }
-
+  
   &_numbers {
     margin: 0 0 4px 0;
+    font-family: 'Garet';
     font-size: 32px;
     font-weight: 850;
-
+    
   }
-
+  
   &_text {
     margin: 0;
+    font-family: 'Garet';
     font-size: 16px;
     font-weight: 850;
     line-height: 18px;
