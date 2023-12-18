@@ -10,6 +10,7 @@ import {
   Review,
   Portfolio,
   Result,
+  NotAlone,
 } from './components';
 import { REVIEW_IMAGES } from './components/Review/Review.images';
 
@@ -17,6 +18,27 @@ export const Landing = () => {
   return (
     <div className="landing">
       <Header />
+      <NotAlone />
+      <Review
+        className="review--light-blue"
+        nameStudent="Яна Корнишина"
+        src={REVIEW_IMAGES.STUDENT4}
+        text="Лучшее&nbsp;&mdash; это разборы и&nbsp;чат в&nbsp;Discord. Преподаватель понятно и&nbsp;лаконично объясняет, при этом атмосфера дружелюбная и&nbsp;мотивирует совершенствоваться. Очень интересно смотреть работы других учеников."
+        works={[
+          {
+            id: 0,
+            src: REVIEW_IMAGES.WORK10,
+          },
+          {
+            id: 2,
+            src: REVIEW_IMAGES.WORK11,
+          },
+          {
+            id: 3,
+            src: REVIEW_IMAGES.WORK12,
+          },
+        ]}
+      />
       <Result />
       <Portfolio />
       <Review

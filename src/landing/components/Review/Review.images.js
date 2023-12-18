@@ -13,4 +13,7 @@ export const REVIEW_IMAGES = {
   WORK7: './images/landingContent/review/work-7.png',
   WORK8: './images/landingContent/review/work-8.png',
   WORK9: './images/landingContent/review/work-9.png',
+  WORK10: './images/landingContent/review/work-10.png',
+  WORK11: './images/landingContent/review/work-11.png',
+  WORK12: './images/landingContent/review/work-12.png',
 };

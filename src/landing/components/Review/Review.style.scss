@@ -142,4 +142,23 @@
       background-color: #282828;
     }
   }
+
+  &--light-blue {
+    .review_decor {
+      background-color: #a1d4ff;
+    }
+
+    .review_works::before {
+      background: url('./assets/decor-light-blue.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .review_textWrapper::before,
+    .review_textWrapper::after {
+      background: url('./assets/quotes-light-blue.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
 }

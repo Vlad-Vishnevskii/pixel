@@ -7,3 +7,4 @@ export * from './Price';
 export * from './Review';
 export * from './Portfolio';
 export * from './Result';
+export * from './NotAlone';
