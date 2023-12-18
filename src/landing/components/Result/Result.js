@@ -1,6 +1,5 @@
 import React from 'react';
 import { useResultTextContent } from './useSchoolTextContent';
-// import { Button } from '../Button/Button';
 
 import './Result.style.scss';
 
