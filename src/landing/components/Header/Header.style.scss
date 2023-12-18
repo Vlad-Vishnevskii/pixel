@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .header {
   position: relative;
   width: 100%;
@@ -20,6 +22,11 @@
     border-radius: 12px;
     background: #f9ab63;
     border: none;
+    cursor: pointer;
+
+    @include hover {
+      opacity: 0.6;
+    }
   }
 
   &_rightBg {
@@ -68,7 +75,7 @@
     position: relative;
     z-index: 2;
     color: #414143;
-    font-family: Garet;
+    font-family: 'Garet';
     font-size: 38px;
     font-style: normal;
     font-weight: 850;
@@ -86,7 +93,7 @@
     border: 1px solid #f9ab63;
     background: #fff;
     color: #414143;
-    font-family: Inter;
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
