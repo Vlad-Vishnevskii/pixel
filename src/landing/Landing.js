@@ -12,6 +12,7 @@ import {
   Result,
   NotAlone,
   VideoBlock,
+  Illustrations,
 } from './components';
 import { REVIEW_IMAGES } from './components/Review/Review.images';
 // import { useReviewTextContent } from './useReviewTextContent';
@@ -22,6 +23,7 @@ export const Landing = () => {
   return (
     <div className="landing">
       <Header />
+      <Illustrations />
       <Review
         className="review--orange review--stars"
         nameStudent="Яна Гусева"

@@ -9,3 +9,5 @@ export * from './Portfolio';
 export * from './Result';
 export * from './NotAlone';
 export * from './VideoBlock';
+export * from './Illustrations';
+export * from './Icons';
