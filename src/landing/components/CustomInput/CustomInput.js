@@ -2,7 +2,7 @@ import React from 'react';
 
 import './CustomInput.style.scss';
 
-export const CustomInput = ({ type, name, placeholder, className=''}) => {
+export const CustomInput = ({ type, name, placeholder, className = '' }) => {
   return (
     <div className={`customInput ${className}`}>
       <label>

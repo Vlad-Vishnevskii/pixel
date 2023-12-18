@@ -9,7 +9,9 @@ export const Portfolio = ({ className, nameStudent, src, text, works }) => {
     <section className="portfolio">
       <div className="container">
         <div className="portfolio_wrapper">
-          <h2 className="portfolio_title">Портфолио учеников на&nbsp;Behance</h2>
+          <h2 className="portfolio_title">
+            Портфолио учеников на&nbsp;Behance
+          </h2>
           <div className="portfolio_student">
             <img
               className=""

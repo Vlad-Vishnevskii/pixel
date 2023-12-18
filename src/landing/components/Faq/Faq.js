@@ -7,7 +7,6 @@ export const Faq = () => {
     <section className="faq">
       <div className="container">
         <h2 className="faq_title">Часто задаваемые вопросы</h2>
-
       </div>
     </section>
   );

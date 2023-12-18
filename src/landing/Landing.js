@@ -1,8 +1,16 @@
 import React from 'react';
 import './Landing.styles.scss';
-import { Header, Footer, Form, AboutSchool, Faq, Price, Review, Portfolio } from './components';
+import {
+  Header,
+  Footer,
+  Form,
+  AboutSchool,
+  Faq,
+  Price,
+  Review,
+  Portfolio,
+} from './components';
 import { REVIEW_IMAGES } from './components/Review/Review.images';
-
 
 export const Landing = () => {
   return (
