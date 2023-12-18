@@ -34,6 +34,7 @@
     border-radius: 50%;
     align-self: center;
     overflow: hidden;
+    user-select: none;
   }
 
   &_textWrapper {
@@ -84,7 +85,7 @@
     letter-spacing: 0.09px;
 
     &:not(:last-child) {
-      margin-bottom: 15px;
+      margin-bottom: 19px;
     }
   }
 
@@ -152,6 +153,38 @@
 
     .review_quotes {
       color: #c6ecff;
+    }
+  }
+
+  &--orange {
+    .review_decor {
+      background-color: #fcc7a1;
+    }
+
+    .review_decorLine {
+      color: #ffdcb5;
+    }
+
+    .review_quotes {
+      color: #ffdcb5;
+    }
+  }
+
+  &--stars {
+    .review_wrapper {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 5px;
+        right: 46px;
+        width: 46px;
+        height: 57px;
+        background: url('./assets/stars.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
     }
   }
 }

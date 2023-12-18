@@ -1,0 +1,35 @@
+.videoBlock {
+  padding-top: 60px;
+  padding-bottom: 24px;
+
+  &_title {
+    margin: 0 0 16px 0;
+    font-family: 'Garet';
+    font-size: 24px;
+    font-weight: 850;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+  }
+
+  &_text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.18px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &_blockTop {
+    margin-bottom: 24px;
+  }
+
+  .video {
+    display: flex;
+    width: 320px;
+    height: 188px;
+    margin: 0 auto 16px auto;
+  }
+}
