@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .header {
   position: relative;
   width: 100%;
@@ -20,6 +22,11 @@
     border-radius: 12px;
     background: #f9ab63;
     border: none;
+    cursor: pointer;
+
+    @include hover {
+      opacity: 0.6;
+    }
   }
 
   &_rightBg {
