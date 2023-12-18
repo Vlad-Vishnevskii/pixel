@@ -23,12 +23,20 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 
+  &--padding-s {
+    padding-top: 20px;
+  }
+
   &--dark {
     background-color: #414143;
   }
 
   &--orange {
     background-color: #f9ab63;
+  }
+
+  &--gradient-blue {
+    background: linear-gradient(180deg, #FFF 0%, #a1d4ff 100%);
   }
 }
 

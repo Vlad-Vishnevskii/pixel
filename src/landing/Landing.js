@@ -18,6 +18,32 @@ export const Landing = () => {
   return (
     <div className="landing">
       <Header />
+      <Review
+        nameStudent="Ольга Ерж"
+        src={REVIEW_IMAGES.STUDENT3}
+        text="Я&nbsp;человек технической специальности. Преподаватели абсолютно четко оговаривают неточности и&nbsp;делают из&nbsp;твоей иллюстрации какое-то волшебство."
+        works={[
+          {
+            id: 0,
+            src: REVIEW_IMAGES.WORK7,
+          },
+          {
+            id: 2,
+            src: REVIEW_IMAGES.WORK8,
+          },
+          {
+            id: 3,
+            src: REVIEW_IMAGES.WORK9,
+          },
+        ]}
+      />
+
+      <section className="section section--gradient-blue section--padding-s">
+        <div className="container">
+          <Form />
+        </div>
+      </section>
+
       <NotAlone />
       <Review
         className="review--light-blue"

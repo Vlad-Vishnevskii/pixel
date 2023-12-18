@@ -1,5 +1,5 @@
 .notAlone {
-  padding-top: 60px;
+  padding-top: 39px;
   padding-bottom: 20px;
   background-color: #a1d4ff;
 
@@ -7,19 +7,16 @@
     max-width: 458px;
   }
 
-  &_wrapper {
-    position: relative;
-
-    &::before {
-      content: "";
-      width: 282px;
-      height: 137px;
-      margin-bottom: 24px;
-      background: url('./assets/not-alone-decor.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+  &_icon {
+    width: fit-content;
+    margin: 0 auto 18px auto;
   }
+
+  &_icon svg {
+    width: 282px;
+    height: 137px;
+  }
+
 
   &_title {
     margin: 0 0 12px 0;

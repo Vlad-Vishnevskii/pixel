@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconCat } from './assets/icon-cat';
 import { NOT_ALONE_IMAGES } from './NotAlone.images';
 
 import './NotAlone.style.scss';
@@ -8,6 +9,9 @@ export const NotAlone = () => {
     <section className="notAlone">
       <div className="container">
         <div className="notAlone_wrapper">
+          <div className="notAlone_icon">
+            <IconCat />
+          </div>
           <h2 className="notAlone_title"> Вы&nbsp;не&nbsp;одни</h2>
           <p className="notAlone_text">
             С&nbsp;вами в&nbsp;вашем путешествии не&nbsp;только преподаватель,
