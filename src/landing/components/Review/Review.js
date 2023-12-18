@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Review.style.scss';
 
-export const Review = ({ mod, nameStudent, src, text, works }) => {
+export const Review = ({ className, nameStudent, src, text, works }) => {
   return (
-    <div className={`review ${mod ? mod : ''}`}>
+    <div className={`review ${className ? className : ''}`}>
       <div className="review_decor">
       </div>
       <div className="review_wrapper">

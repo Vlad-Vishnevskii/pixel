@@ -4,7 +4,7 @@ import { Button } from '../Button/Button';
 
 import './Portfolio.style.scss';
 
-export const Portfolio = ({ mod, nameStudent, src, text, works }) => {
+export const Portfolio = ({ className, nameStudent, src, text, works }) => {
   return (
     <section className="portfolio">
       <div className="container">
@@ -27,10 +27,10 @@ export const Portfolio = ({ mod, nameStudent, src, text, works }) => {
             width={320}
             height={931}
           />
-          <Button 
+          <Button
             text="Посмотреть ещё"
             tupe="button"
-            mod="button--border"
+            className="button--border"
           />
         </div>
       </div>

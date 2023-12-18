@@ -2,11 +2,11 @@ import React from 'react';
 
 import './CustomInput.style.scss';
 
-export const CustomInput = ({type, name, placeholder, mod}) => {
+export const CustomInput = ({ type, name, placeholder, className=''}) => {
   return (
-    <div className={`customInput ${mod ? mod : ''}`}>
+    <div className={`customInput ${className}`}>
       <label>
-        <input type={type} name={name} placeholder={placeholder}/>
+        <input type={type} name={name} placeholder={placeholder} />
       </label>
     </div>
   );

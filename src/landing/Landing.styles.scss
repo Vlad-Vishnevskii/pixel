@@ -15,3 +15,22 @@ body {
     box-sizing: border-box;
   }
 }
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  &--dark {
+    background-color: #414143;
+  }
+
+  &--orange {
+    background-color: #f9ab63;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}

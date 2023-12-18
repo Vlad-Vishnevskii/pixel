@@ -11,22 +11,21 @@ export const Form = () => {
       <p className="form_subtitle">Или&nbsp;задать вопрос</p>
       <form action="#" method="post">
         <CustomInput
-          type="text" 
+          type="text"
           name="name"
           placeholder="Имя"
-          mod="customInput--name"
-          />
+        />
         <CustomInput
-          type="text" 
+          type="text"
           name="login"
           placeholder="Логин или номер телефона"
-          mod="customInput--login"
+          className="customInput--login"
         />
       </form>
       <p className="form_text">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;Telegram в&nbsp;течение рабочего дня.</p>
-      <Button 
-        text= "Оставить заявку"
-        type= "button"
+      <Button
+        text="Оставить заявку"
+        type="button"
       />
     </div>
   );
