@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: center;
   padding: 14px 28px;
-  font-family: PT Sans;
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #fff;
-  letter-spacing: 0.18pz;
+  letter-spacing: 0.18px;
   background-color: #34a3ff;
   border: none;
   border-radius: 16px;
@@ -25,7 +25,7 @@
   }
 
   &--border {
-    padding: 7px 17px;
+    padding: 7px 14px;
     border-radius: 12px;
     background-color: transparent;
     border: 1px solid #fff;

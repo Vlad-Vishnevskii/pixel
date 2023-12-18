@@ -1,0 +1,54 @@
+.notAlone {
+  padding-top: 39px;
+  padding-bottom: 20px;
+  background-color: #a1d4ff;
+
+  .container {
+    max-width: 458px;
+  }
+
+  &_icon {
+    width: fit-content;
+    margin: 0 auto 18px auto;
+  }
+
+  &_icon svg {
+    width: 282px;
+    height: 137px;
+  }
+
+
+  &_title {
+    margin: 0 0 12px 0;
+    font-family: 'Garet';
+    font-size: 24px;
+    font-weight: 850;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+  }
+
+  &_text {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.18px;
+  }
+
+  &_image {
+    position: relative;
+    width: 100%;
+    padding-bottom: percentage(calc(208 / 320));
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    object-fit: cover;
+  }
+}

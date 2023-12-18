@@ -10,7 +10,12 @@ export const Form = () => {
       <h2 className="form_title">Записаться на&nbsp;курс</h2>
       <p className="form_subtitle">Или&nbsp;задать вопрос</p>
       <form action="#" method="post">
-        <CustomInput type="text" name="name" placeholder="Имя" />
+        <CustomInput
+          type="text"
+          name="name"
+          placeholder="Имя"
+          className="customInput--name"
+        />
         <CustomInput
           type="text"
           name="login"

@@ -6,5 +6,8 @@ export * from './Faq';
 export * from './Price';
 export * from './Review';
 export * from './Portfolio';
+export * from './Result';
+export * from './NotAlone';
+export * from './VideoBlock';
 export * from './Illustrations';
 export * from './Icons';
