@@ -1,0 +1,146 @@
+.review {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 91px;
+    right: 21px;
+    width: 120px;
+    height: 91px;
+    background: url('./assets/pencil.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  &_decor {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    clip-path: polygon(0 0, 100% 0, 100% 68%, 0% 100%);
+    z-index: -1;
+  }
+
+  &_image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 36px;
+    border-radius: 50%;
+    align-self: center;
+    overflow: hidden;
+  }
+
+  &_textWrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 39px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 46px;
+      height: 36px;
+      background: url('./assets/quotes-orange.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      top: -11px;
+      left: -12px;
+    }
+
+    &::after {
+      transform: rotate(180deg);
+      bottom: -19px;
+      right: 9px;
+    }
+  }
+
+  &_textInner {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  &_name {
+    margin: 0 0 9px 0;
+    font-size: 18px;
+    font-weight: 850;
+    line-height: 18px;
+    letter-spacing: 0.09px;
+    text-align: center;
+  }
+
+  &_text {
+    margin: 0;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.09px;
+  }
+
+  &_works {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -17px;
+      left: 76px;
+      width: 97px;
+      height: 33px;
+      background: url('./assets/decor.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_worksTitle {
+    margin: 0 0 8px 0;
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.06px;
+  }
+
+  &_worksList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &_worksItem {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 90px;
+    height: 67px;
+  }
+
+  &_worksItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+  }
+
+  &--dark {
+    .review_decor {
+      background-color: #282828;
+    }
+  }
+}

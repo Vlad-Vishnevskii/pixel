@@ -1,5 +1,18 @@
 .footer {
   position: relative;
   width: 100%;
-  background: orange;
+  background: #414143;
+  padding-top: 12px;
+  padding-bottom: 24px;
+
+  &_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &_logo {
+    flex-shrink: 0;
+  }
 }

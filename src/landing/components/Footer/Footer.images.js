@@ -1,4 +1,3 @@
 export const FOOTER_IMAGES = {
-  LOGO: 'название путь',
-  CAT: 'название путь',
+  LOGO: './images/landingContent/logo-blue.svg',
 };

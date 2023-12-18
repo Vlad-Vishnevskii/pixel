@@ -1,0 +1,16 @@
+export const REVIEW_IMAGES = {
+  STUDENT1: './images/landingContent/review/student-1.jpg',
+  STUDENT2: './images/landingContent/review/student-2.jpg',
+  STUDENT3: './images/landingContent/review/student-3.jpg',
+  STUDENT4: './images/landingContent/review/student-4.jpg',
+  STUDENT5: './images/landingContent/review/student-5.jpg',
+  WORK1: './images/landingContent/review/work-1.png',
+  WORK2: './images/landingContent/review/work-2.png',
+  WORK3: './images/landingContent/review/work-3.png',
+  WORK4: './images/landingContent/review/work-4.png',
+  WORK5: './images/landingContent/review/work-5.png',
+  WORK6: './images/landingContent/review/work-6.png',
+  WORK7: './images/landingContent/review/work-7.png',
+  WORK8: './images/landingContent/review/work-8.png',
+  WORK9: './images/landingContent/review/work-9.png',
+};

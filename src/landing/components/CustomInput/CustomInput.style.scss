@@ -1,0 +1,52 @@
+.customInput {
+  input {
+    padding: 13px 12px 13px 38px;
+    border: 1px solid #bcbdbf;
+    border-radius: 6px;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.18px;
+    color: #414143;
+
+    &::-webkit-input-placeholder {
+      color: #414143;
+    }
+
+    &:focus {
+      border-color: #a1d4ff;
+      outline: none;
+    }
+  }
+
+  &.isValid input {
+    border-color: #414143;
+  }
+
+  label {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 17px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 12px;
+    }
+  }
+
+  &--name label::before {
+    background: url('./assets/icon-cat.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--login label::before {
+    background: url('./assets/icon-tg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
