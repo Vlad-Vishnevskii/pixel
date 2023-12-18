@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconCat } from './assets/Icon-cat';
+import { IconCat } from './assets/IconCat';
 import { NOT_ALONE_IMAGES } from './NotAlone.images';
 
 import './NotAlone.style.scss';
