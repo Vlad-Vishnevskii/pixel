@@ -1,15 +1,17 @@
 import React from 'react';
-import { ABOUT_SCHOOL_TEXT_CONTENT } from './AboutSchool.constans';
+import { useSchoolTextContent } from './useSchoolTextContent';
 
 import './AboutSchool.style.scss';
 
 export const AboutSchool = () => {
+  const schoolTextContent = useSchoolTextContent();
+
   return (
     <section className="aboutSchool">
       <div className="container">
         <h2 className="aboutSchool_title">О ШКОЛЕ</h2>
         <ul className="aboutSchool_list">
-          {ABOUT_SCHOOL_TEXT_CONTENT.map((item) => (
+          {schoolTextContent.map((item) => (
             <li className="aboutSchool_item" key={item.id}>
               <p className="aboutSchool_numbers">{item.title}</p>
               <p className="aboutSchool_text">{item.description}</p>
