@@ -9,6 +9,7 @@ import {
   Price,
   Review,
   Portfolio,
+  Illustrations,
 } from './components';
 import { REVIEW_IMAGES } from './components/Review/Review.images';
 
@@ -16,6 +17,7 @@ export const Landing = () => {
   return (
     <div className="landing">
       <Header />
+      <Illustrations />
       <Portfolio />
       <Review
         className="review--dark"
