@@ -40,28 +40,24 @@
     width: 100%;
     position: relative;
     margin-bottom: 39px;
+  }
 
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 46px;
-      height: 36px;
-      background: url('./assets/quotes-orange.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+  &_quotes {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 36px;
+    top: -11px;
+    left: -12px;
+    color: #ffdcb5;
+  }
 
-    &::before {
-      top: -11px;
-      left: -12px;
-    }
-
-    &::after {
-      transform: rotate(180deg);
-      bottom: -37px;
-      right: 9px;
-    }
+  &_quotes--end {
+    transform: rotate(180deg);
+    top: unset;
+    left: unset;
+    bottom: -37px;
+    right: 9px;
   }
 
   &_textInner {
@@ -79,31 +75,33 @@
     text-align: center;
   }
 
-  &_text {
+  &_text p {
     margin: 0;
     font-size: 18px;
     font-style: italic;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0.09px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 
   &_works {
     position: relative;
     max-width: 300px;
     margin: 0 auto;
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: -17px;
-      left: 76px;
-      width: 97px;
-      height: 33px;
-      background: url('./assets/decor.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+  &_decorLine {
+    position: absolute;
+    content: "";
+    top: -17px;
+    left: 76px;
+    width: 97px;
+    height: 33px;
+    color: #ffdcb5;
   }
 
   &_worksTitle {
@@ -148,17 +146,12 @@
       background-color: #a1d4ff;
     }
 
-    .review_works::before {
-      background: url('./assets/decor-light-blue.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
+    .review_decorLine {
+      color: #a1d4ff;
     }
 
-    .review_textWrapper::before,
-    .review_textWrapper::after {
-      background: url('./assets/quotes-light-blue.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
+    .review_quotes {
+      color: #c6ecff;
     }
   }
 }

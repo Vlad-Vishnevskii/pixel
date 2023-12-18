@@ -13,15 +13,23 @@ import {
   NotAlone,
 } from './components';
 import { REVIEW_IMAGES } from './components/Review/Review.images';
+// import { useReviewTextContent } from './useReviewTextContent';
 
 export const Landing = () => {
+  // const reviewTextContent = useReviewTextContent();
+
   return (
     <div className="landing">
       <Header />
       <Review
         nameStudent="Ольга Ерж"
         src={REVIEW_IMAGES.STUDENT3}
-        text="Я&nbsp;человек технической специальности. Преподаватели абсолютно четко оговаривают неточности и&nbsp;делают из&nbsp;твоей иллюстрации какое-то волшебство."
+        texts={[
+          {
+            id: 0,
+            text: "Я&nbsp;человек технической специальности. Преподаватели абсолютно четко оговаривают неточности и&nbsp;делают из&nbsp;твоей иллюстрации какое-то волшебство."
+          },
+        ]}
         works={[
           {
             id: 0,
@@ -49,7 +57,12 @@ export const Landing = () => {
         className="review--light-blue"
         nameStudent="Яна Корнишина"
         src={REVIEW_IMAGES.STUDENT4}
-        text="Лучшее&nbsp;&mdash; это разборы и&nbsp;чат в&nbsp;Discord. Преподаватель понятно и&nbsp;лаконично объясняет, при этом атмосфера дружелюбная и&nbsp;мотивирует совершенствоваться. Очень интересно смотреть работы других учеников."
+        texts={[
+          {
+            id: 0,
+            text: "Лучшее&nbsp;&mdash; это разборы и&nbsp;чат в&nbsp;Discord. Преподаватель понятно и&nbsp;лаконично объясняет, при этом атмосфера дружелюбная и&nbsp;мотивирует совершенствоваться. Очень интересно смотреть работы других учеников."
+          },
+        ]}
         works={[
           {
             id: 0,
@@ -71,7 +84,12 @@ export const Landing = () => {
         className="review--dark"
         nameStudent="Виктория Пивкина"
         src={REVIEW_IMAGES.STUDENT5}
-        text="На&nbsp;курсе мне больше всего понравились конспекты лекций по&nbsp;теории рисунка, видимо это самое важное, чего мне не&nbsp;хватало для качественного выполнения работ. Часть денег (за&nbsp;курс) мне уже удалось вернуть, продав несколько своих работ."
+        texts={[
+          {
+            id: 0,
+            text: "На&nbsp;курсе мне больше всего понравились конспекты лекций по&nbsp;теории рисунка, видимо это самое важное, чего мне не&nbsp;хватало для качественного выполнения работ. Часть денег (за&nbsp;курс) мне уже удалось вернуть, продав несколько своих работ."
+          },
+        ]}
         works={[
           {
             id: 0,
