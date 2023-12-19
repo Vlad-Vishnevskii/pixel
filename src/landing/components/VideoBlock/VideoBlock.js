@@ -18,8 +18,9 @@ export const VideoBlock = () => {
           <Video
             width={320}
             height={188}
-            src="https://www.youtube.com/embed/ScMzIvxBSi4?si=E79c-iQDCSD4Z3TM"
-            title="YouTube video player"
+            src="./video/work-analysis.mp4"
+            poster="./images/landingContent/video-block/poster.jpg"
+            type="video/mp4"
           />
           <p className="videoBlock_text">
             Показываем как&nbsp;вносить все&nbsp;правки и&nbsp;анализируем

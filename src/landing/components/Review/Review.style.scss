@@ -170,6 +170,20 @@
     }
   }
 
+  &--gradient-blue {
+    .review_decor {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #c6ecff 100%);
+    }
+
+    .review_decorLine {
+      color: #a1d4ff;
+    }
+
+    .review_quotes {
+      color: #c6ecff;
+    }
+  }
+
   &--stars {
     .review_wrapper {
       position: relative;
