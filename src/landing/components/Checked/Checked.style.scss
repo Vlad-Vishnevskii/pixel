@@ -1,0 +1,57 @@
+.checked {
+  background-color: #ffdcb5;
+  padding-top: 40px;
+  padding-bottom: 41px;
+
+  &_titleWrapper {
+    position: relative;
+    background: #fff;
+    padding: 18px 20px 16px 20px;
+    border-radius: 12px;
+    border: 1px solid #414143;
+    z-index: 1;
+  }
+
+  &_title {
+    margin: 0;
+    color: #ff9a36;
+    font-family: "Garet";
+    font-size: 24px;
+    font-weight: 850;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+
+  }
+
+  &_list {
+    list-style: none;
+    margin: -12px 0 0 0;
+    padding: 24px 12px;
+    background-color: #414143;
+    border-radius: 12px;
+  }
+
+  &_item {
+    position: relative;
+    padding-left: 28px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.18px;
+    color: #ff9a36;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 12px;
+      top: 9px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: currentColor;
+    }
+  }
+}

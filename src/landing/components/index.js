@@ -11,3 +11,6 @@ export * from './NotAlone';
 export * from './VideoBlock';
 export * from './Illustrations';
 export * from './Icons';
+export * from './Notes';
+export * from './OnlinePlatform';
+export * from './Checked';
