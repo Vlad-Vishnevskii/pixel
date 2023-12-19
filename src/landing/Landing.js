@@ -14,6 +14,8 @@ import {
   VideoBlock,
   Illustrations,
   Notes,
+  OnlinePlatform,
+  Checked,
 } from './components';
 import { useReviewTextContent } from './useReviewTextContent';
 
@@ -26,6 +28,8 @@ export const Landing = () => {
       <Header />
       <Illustrations />
       <Review className="review--gradient-blue" {...student1} />
+      <Checked />
+      <OnlinePlatform />
       <Notes />
       <Review className="review--orange review--stars" {...student2} />
       <VideoBlock />

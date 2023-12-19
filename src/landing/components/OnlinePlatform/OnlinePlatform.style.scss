@@ -1,0 +1,54 @@
+.onlinePlatform {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ffdcb5;
+
+  &_wrapper {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 151px;
+      height: 181px;
+      top: -21px;
+      right: 39px;
+      background: url('./assets/decor.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_title {
+    margin: 0 0 16px 0;
+    font-family: "Garet";
+    font-size: 24px;
+    font-weight: 850;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+  }
+
+  &_text {
+    margin-bottom: 16px;
+  }
+
+  &_text p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.18px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &_info {
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 19px;
+    letter-spacing: 0.09px;
+  }
+}
