@@ -14,3 +14,4 @@ export * from './Icons';
 export * from './Notes';
 export * from './OnlinePlatform';
 export * from './Checked';
+export * from './Principles';

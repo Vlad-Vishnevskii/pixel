@@ -17,7 +17,7 @@ export const Illustrations = () => {
       />
       <div className="illustrations_list">
         {ILLUSTRATIONS_IMAGES.map((imagePath, index) => (
-          <img src={imagePath} key={index} />
+          <img src={imagePath} key={index} alt="" />
         ))}
         <div className="illustrations_frame illustrations_frame--blue">
           Все это нарисовано мышкой!

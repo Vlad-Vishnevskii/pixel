@@ -16,6 +16,7 @@ import {
   Notes,
   OnlinePlatform,
   Checked,
+  Principles,
 } from './components';
 import { useReviewTextContent } from './useReviewTextContent';
 
@@ -27,6 +28,7 @@ export const Landing = () => {
     <div className="landing">
       <Header />
       <Illustrations />
+      <Principles />
       <Review className="review--gradient-blue" {...student1} />
       <Checked />
       <OnlinePlatform />
