@@ -17,6 +17,7 @@ import {
   OnlinePlatform,
   Checked,
   Principles,
+  Program,
 } from './components';
 import { useReviewTextContent } from './useReviewTextContent';
 
@@ -29,6 +30,7 @@ export const Landing = () => {
       <Header />
       <Illustrations />
       <Principles />
+      <Program />
       <Review className="review--gradient-blue" {...student1} />
       <Checked />
       <OnlinePlatform />

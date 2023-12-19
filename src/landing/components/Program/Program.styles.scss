@@ -1,0 +1,17 @@
+.program {
+  position: relative;
+
+  &_cat {
+    width: 100%;
+    height: auto;
+  }
+
+  &_title {
+    color: #414143;
+    font-family: 'Garet';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 850;
+    line-height: normal;
+  }
+}
