@@ -29,16 +29,16 @@ export const Illustrations = () => {
       <div className="illustrations_textBlock container">
         <h2>
           10 иллюстраций в портфолио к концу курса
-          <div className="illustrations_starSmall">
+          <span className="illustrations_starSmall">
             <Star />
-          </div>
+          </span>
         </h2>
         <p>
           Научим рисовать&nbsp;векторные иллюстрации, иконки и паттерны
           с&nbsp;нуля.
-          <div className="illustrations_starBig">
+          <span className="illustrations_starBig">
             <Star />
-          </div>
+          </span>
         </p>
       </div>
     </div>
