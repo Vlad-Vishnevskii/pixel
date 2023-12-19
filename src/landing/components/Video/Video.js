@@ -1,19 +1,15 @@
 import React from 'react';
+import { IconPlay } from './assets/IconPlay';
 
 import './Video.style.scss';
 
-export const Video = ({ width, height, src, title }) => {
+export const Video = ({ width, height, src, title, poster, type }) => {
   return (
     <div className="video">
-      <iframe
-        width={width}
-        height={height}
-        src={src}
-        title={title}
-        frameborder="0"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+      <video src={src} poster={poster} width={width} height={height} type={type}></video>
+      <button className="video_btnPlay" type="button">
+        <IconPlay />
+      </button>
     </div>
   );
 };
