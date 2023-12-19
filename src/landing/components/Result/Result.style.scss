@@ -12,16 +12,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-    &::before {
-      content: "";
-      width: 250px;
-      height: 93px;
-      margin-bottom: 20px;
-      background: url('./assets/result-decor.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+  &_decor {
+    width: 250px;
+    height: 93px;
+    margin-bottom: 20px;
+  }
+
+  &_decor svg {
+    width: 100%;
+    height: 100%;
   }
 
   &_title {

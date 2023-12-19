@@ -1,14 +1,18 @@
 import React from 'react';
 import { PORTFOLIO_IMAGES } from './Portfolio.images';
 import { Button } from '../Button/Button';
+import { Decor } from './assets/Decor';
 
 import './Portfolio.style.scss';
 
-export const Portfolio = ({ className, nameStudent, src, text, works }) => {
+export const Portfolio = () => {
   return (
     <section className="portfolio">
       <div className="container">
         <div className="portfolio_wrapper">
+          <div className="portfolio_decor">
+            <Decor />
+          </div>
           <h2 className="portfolio_title">
             Портфолио учеников на&nbsp;Behance
           </h2>
