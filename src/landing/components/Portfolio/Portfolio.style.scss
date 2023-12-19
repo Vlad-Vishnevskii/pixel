@@ -10,16 +10,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &::before {
-      content: "";
-      width: 266px;
-      height: 98px;
-      margin-bottom: 32px;
-      background: url('./assets/portfolio-decor.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+  }
+  
+  &_decor {
+    width: 266px;
+    height: 98px;
+    margin-bottom: 32px;
+  }
+  
+  &_decor svg {
+    width: 100%;
+    height: 100%;
   }
 
   &_title {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Decor } from './assets/Decor';
 import { useResultTextContent } from './useSchoolTextContent';
 
 import './Result.style.scss';
@@ -10,6 +11,9 @@ export const Result = () => {
     <section className="result">
       <div className="container">
         <div className="result_wrapper">
+          <div className="result_decor">
+            <Decor />
+          </div>
           <h2 className="result_title">
             Упор на&nbsp;подготовку к&nbsp;реальной работе
           </h2>
