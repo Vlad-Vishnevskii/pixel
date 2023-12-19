@@ -1,3 +1,35 @@
-// .video {
+@import './../../mixins';
 
-// }
+.video {
+  position: relative;
+
+  &_btnPlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+
+    @include hover {
+      opacity: 0.7;
+    }
+
+    @include active {
+      opacity: 0.7;
+    }
+  }
+
+  &_btnPlay svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

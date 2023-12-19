@@ -1,6 +1,6 @@
 import React from 'react';
 import { Quotes } from './assets/Quotes';
-import { DekorLine } from './assets/Decor-line';
+import { DekorLine } from './assets/DecorLine';
 
 import './Review.style.scss';
 
