@@ -13,6 +13,7 @@ import {
   NotAlone,
   VideoBlock,
   Illustrations,
+  Notes,
 } from './components';
 import { useReviewTextContent } from './useReviewTextContent';
 
@@ -25,6 +26,7 @@ export const Landing = () => {
       <Header />
       <Illustrations />
       <Review className="review--gradient-blue" {...student1} />
+      <Notes />
       <Review className="review--orange review--stars" {...student2} />
       <VideoBlock />
       <Review {...student3} />
