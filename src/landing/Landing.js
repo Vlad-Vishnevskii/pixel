@@ -15,56 +15,17 @@ import {
   Illustrations,
 } from './components';
 import { REVIEW_IMAGES } from './components/Review/Review.images';
-// import { useReviewTextContent } from './useReviewTextContent';
+import { useReviewTextContent } from './useReviewTextContent';
 
 export const Landing = () => {
-  // const reviewTextContent = useReviewTextContent();
+  const reviewTextContent = useReviewTextContent();
+  const [student1, student2, student3, student4, student5] = reviewTextContent;
 
   return (
     <div className="landing">
       <Header />
       <Illustrations />
-      <Review
-        className="review--orange review--stars"
-        nameStudent="Яна Гусева"
-        src={REVIEW_IMAGES.STUDENT2}
-        texts={[
-          {
-            id: 0,
-            text: (
-              <>
-                Ранее я&nbsp;проходила ни&nbsp;один курс в&nbsp;других школах,
-                но&nbsp;этот дал столько знаний, сколько я&nbsp;не&nbsp;получила
-                за&nbsp;6&nbsp;лет в&nbsp;универе!
-              </>
-            ),
-          },
-          {
-            id: 1,
-            text: (
-              <>
-                Еще во&nbsp;время учебы у&nbsp;меня появилось 2&nbsp;клиента,
-                где я&nbsp;задействовала навыки рисования в&nbsp;иллюстраторе.
-                Это очень порадовало меня!
-              </>
-            ),
-          },
-        ]}
-        works={[
-          {
-            id: 0,
-            src: REVIEW_IMAGES.WORK4,
-          },
-          {
-            id: 2,
-            src: REVIEW_IMAGES.WORK5,
-          },
-          {
-            id: 3,
-            src: REVIEW_IMAGES.WORK6,
-          },
-        ]}
-      />
+      <Review className="review--orange review--stars" {...student2} />
       <VideoBlock />
       <Review
         nameStudent="Ольга Ерж"
