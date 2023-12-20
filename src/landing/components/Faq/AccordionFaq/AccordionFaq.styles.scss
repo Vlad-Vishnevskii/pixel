@@ -1,0 +1,81 @@
+@import './../../../mixins';
+
+.accordionFaq {
+  &_button {
+    position: relative;
+    padding: 20px 30px 20px 37px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.18px;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid #ededed;
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+
+    @include hover {
+      opacity: 0.7;
+    }
+
+    &[aria-expanded='true'] {
+      font-family: 'Garet';
+      font-size: 18px;
+      font-weight: 850;
+      line-height: 18px;
+      letter-spacing: 0.09px;
+      border-color: transparent;
+    }
+
+    &::after {
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+      content: '';
+      height: 8px;
+      width: 13px;
+      background: url('./assets/arrow.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: transform 0.3s ease;
+    }
+
+    &[aria-expanded='true']::after,
+    &[aria-selected='true']::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &_item {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.18px;
+
+  }
+
+  &_item p {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &_panel {
+    background-color: #ededed;
+    padding: 20px;
+    border-radius: 12px;
+    animation: fadein 0.35s ease;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
