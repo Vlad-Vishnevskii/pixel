@@ -18,3 +18,4 @@ export * from './Principles';
 export * from './Program';
 export * from './Feedback';
 export * from './InfoBlock';
+export * from './Works';

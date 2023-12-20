@@ -42,4 +42,11 @@
       opacity: 0.7;
     }
   }
+
+  &--white {
+    padding: 8px 16px;
+    color: #414143;
+    background-color: #fff;
+    border-radius: 12px;
+  }
 }
