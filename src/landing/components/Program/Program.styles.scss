@@ -1,8 +1,12 @@
 .program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 
   &_cat {
     width: 100%;
+    max-width: 450px;
     height: auto;
   }
 
