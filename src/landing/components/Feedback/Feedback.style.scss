@@ -1,0 +1,29 @@
+.feedback {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+  &_title {
+    margin:  0 0 8px 0;
+    font-family: 'Garet';
+    font-size: 24px;
+    font-weight: 850;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+  }
+
+  &_text {
+    margin-bottom: 40px;
+  }
+  
+  &_text p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.18px;
+  }
+
+  &_text p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

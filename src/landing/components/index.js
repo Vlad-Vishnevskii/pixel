@@ -16,3 +16,5 @@ export * from './OnlinePlatform';
 export * from './Checked';
 export * from './Principles';
 export * from './Program';
+export * from './Feedback';
+export * from './InfoBlock';
