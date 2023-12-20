@@ -1,0 +1,21 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &_cat {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  &_title {
+    color: #414143;
+    font-family: 'Garet';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 850;
+    line-height: normal;
+  }
+}
