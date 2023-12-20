@@ -1,4 +1,22 @@
 import React from 'react';
+import { Icon1 } from './assets/Icon1';
+import { Icon2 } from './assets/Icon2';
+import { Icon3 } from './assets/Icon3';
+import { Icon4 } from './assets/Icon4';
+import { Icon5 } from './assets/Icon5';
+// import { Icon6 } from './assets/Icon6';
+import { Icon7 } from './assets/Icon7';
+import { Icon8 } from './assets/Icon8';
+// import { Icon9 } from './assets/Icon9';
+import { Icon10 } from './assets/Icon10';
+import { Icon11 } from './assets/Icon11';
+import { Icon12 } from './assets/Icon12';
+import { Icon13 } from './assets/Icon13';
+import { Icon14 } from './assets/Icon14';
+import { Icon15 } from './assets/Icon15';
+import { Icon16 } from './assets/Icon16';
+import { Icon17 } from './assets/Icon17';
+import { Icon18 } from './assets/Icon18';
 
 export const useFaqTextContent = () => {
   const schoolTextContent = [
@@ -17,7 +35,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon1',
+      icon: <Icon1 />,
     },
     {
       id: 2,
@@ -36,7 +54,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon2',
+      icon: <Icon2 />,
     },
     {
       id: 3,
@@ -58,7 +76,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon3',
+      icon: <Icon3 />,
     },
     {
       id: 4,
@@ -75,7 +93,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon4',
+      icon: <Icon4 />,
     },
     {
       id: 5,
@@ -94,7 +112,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon5',
+      icon: <Icon5 />,
     },
     // {
     //   id: 6,
@@ -105,7 +123,7 @@ export const useFaqTextContent = () => {
     //       text: <></>,
     //     },
     //   ],
-    //   icon: 'Icon6',
+    //   icon: <Icon6 />,
     // },
     {
       id: 7,
@@ -124,7 +142,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon7',
+      icon: <Icon7 />,
     },
     {
       id: 8,
@@ -142,7 +160,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon8',
+      icon: <Icon8 />,
     },
     // {
     //   id: 9,
@@ -153,7 +171,7 @@ export const useFaqTextContent = () => {
     //       text: <></>,
     //     },
     //   ],
-    //   icon: 'Icon9',
+    //   icon: <Icon9 />,
     // },
     {
       id: 10,
@@ -171,7 +189,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon10',
+      icon: <Icon10 />,
     },
     {
       id: 11,
@@ -191,7 +209,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon11',
+      icon: <Icon11 />,
     },
     {
       id: 12,
@@ -212,7 +230,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon12',
+      icon: <Icon12 />,
     },
     {
       id: 13,
@@ -240,7 +258,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon13',
+      icon: <Icon13 />,
     },
     {
       id: 14,
@@ -258,7 +276,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon14',
+      icon: <Icon14 />,
     },
     {
       id: 15,
@@ -278,7 +296,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon15',
+      icon: <Icon15 />,
     },
     {
       id: 16,
@@ -299,7 +317,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon16',
+      icon: <Icon16 />,
     },
     {
       id: 17,
@@ -315,7 +333,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon17',
+      icon: <Icon17 />,
     },
     {
       id: 18,
@@ -333,7 +351,7 @@ export const useFaqTextContent = () => {
           ),
         },
       ],
-      icon: 'Icon18',
+      icon: <Icon18 />,
     },
   ];
 
