@@ -7,7 +7,7 @@ import { Icon5 } from './assets/Icon5';
 // import { Icon6 } from './assets/Icon6';
 import { Icon7 } from './assets/Icon7';
 import { Icon8 } from './assets/Icon8';
-// import { Icon9 } from './assets/Icon9';
+import { Icon9 } from './assets/Icon9';
 import { Icon10 } from './assets/Icon10';
 import { Icon11 } from './assets/Icon11';
 import { Icon12 } from './assets/Icon12';
@@ -114,17 +114,6 @@ export const useFaqTextContent = () => {
       ],
       icon: <Icon5 />,
     },
-    // {
-    //   id: 6,
-    //   title: <>Можно оплатить частями?</>,
-    //   texts: [
-    //     {
-    //       id: 0,
-    //       text: <></>,
-    //     },
-    //   ],
-    //   icon: <Icon6 />,
-    // },
     {
       id: 7,
       title: <>Какой процент по&nbsp;рассрочке?</>,
@@ -162,17 +151,33 @@ export const useFaqTextContent = () => {
       ],
       icon: <Icon8 />,
     },
-    // {
-    //   id: 9,
-    //   title: <>Если не&nbspуспел загрузить работу на&nbspразбор?</>,
-    //   texts: [
-    //     {
-    //       id: 0,
-    //       text: <></>,
-    //     },
-    //   ],
-    //   icon: <Icon9 />,
-    // },
+    {
+      id: 9,
+      title: <>Если не&nbsp;успел загрузить работу на&nbsp;разбор?</>,
+      texts: [
+        {
+          id: 0,
+          text: (
+            <>
+              ДЗ&nbsp;вы&nbsp;можете загружать в&nbsp;любое время, главное
+              загрузить работу не&nbsp;позднее чем за&nbsp;2&nbsp;часа
+              до&nbsp;начала трансляции. Если не&nbsp;успели,
+              то&nbsp;мы&nbsp;разберем вашу работу на&nbsp;следующей трансляции.
+            </>
+          ),
+        },
+        {
+          id: 1,
+          text: (
+            <>
+              Работы проверяет преподаватель курса каждый понедельник
+              и&nbsp;четверг, в&nbsp;19:00 по&nbsp;МСК.
+            </>
+          ),
+        },
+      ],
+      icon: <Icon9 />,
+    },
     {
       id: 10,
       title: <>На&nbsp;сколько доступ к&nbsp;урокам и&nbsp;проверке&nbsp;ДЗ?</>,

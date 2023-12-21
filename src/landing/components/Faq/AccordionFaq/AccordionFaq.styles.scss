@@ -54,7 +54,10 @@
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.18px;
+  }
 
+  &_item:last-child .accordionFaq_panel {
+    margin-bottom: 20px;
   }
 
   &_item p {
