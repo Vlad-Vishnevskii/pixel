@@ -21,6 +21,7 @@ import {
   Feedback,
   InfoBlock,
   Works,
+  Author,
 } from './components';
 import { useReviewTextContent } from './useReviewTextContent';
 
@@ -34,6 +35,7 @@ export const Landing = () => {
       <Illustrations />
       <Principles />
       <Program />
+      <Author />
       <Works />
       <InfoBlock />
       <Feedback />
