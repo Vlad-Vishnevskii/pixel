@@ -1,7 +1,7 @@
 import React from 'react';
 import './Author.style.scss';
-// import { Star } from '../Icons/Star';
-// import { Decor } from './assets/Decor';
+import { Star } from '../Icons/Star';
+import { Star2 } from '../Icons/Star2';
 import { AUTHOR_IMAGES } from './Author.images';
 import { Microphone } from './assets/Microphone';
 import { NameAuthor } from './assets/NameAuthor';
@@ -21,11 +21,14 @@ export const Author = () => {
               <p className="author_greetingsText">my name is</p>
               <div className="author_photo">
                 <img
-                    src={AUTHOR_IMAGES.PHOTO}
-                    width={83}
-                    height={104}
-                    alt="Яна Суворова"
-                  />
+                  src={AUTHOR_IMAGES.PHOTO}
+                  width={83}
+                  height={104}
+                  alt="Яна Суворова"
+                />
+                <div className="author_iconStar2">
+                  <Star2 />
+                </div>
               </div>
               <div className="author_iconName">
                 <NameAuthor />
@@ -36,20 +39,26 @@ export const Author = () => {
             </div>
           </div>
 
-          <ul className="author_list">
-            <li className="author_item">
-              Яна Суворова лично ведет обучение и&nbsp;разбирает домашние
-              задания учеников.
-            </li>
-            <li className="author_item">
-              Нет меняющихся кураторов&nbsp;&mdash; у&nbsp;преподавателя
-              сохраняется контекст вашей работы.
-            </li>
-            <li className="author_item">
-              Обратная связь по&nbsp;домашним заданиям студентов на&nbsp;онлайн
-              разборе 2&nbsp;раза в&nbsp;неделю.
-            </li>
-          </ul>
+          <div className="author_listWrapper">
+            <ul className="author_list">
+              <li className="author_item">
+                Яна Суворова лично ведет обучение и&nbsp;разбирает домашние
+                задания учеников.
+              </li>
+              <li className="author_item">
+                Нет меняющихся кураторов&nbsp;&mdash; у&nbsp;преподавателя
+                сохраняется контекст вашей работы.
+              </li>
+              <li className="author_item">
+                Обратная связь по&nbsp;домашним заданиям студентов
+                на&nbsp;онлайн разборе 2&nbsp;раза в&nbsp;неделю.
+              </li>
+            </ul>
+
+            <div className="author_iconStar">
+              <Star />
+            </div>
+          </div>
 
           <Video
             width={320}
@@ -63,11 +72,11 @@ export const Author = () => {
             {AUTHOR_DATA.map((item) => (
               <li className="author_itemImage">
                 <img
-                    src={item.img}
-                    width={item.width}
-                    height={item.height}
-                    alt="Работа"
-                  />
+                  src={item.img}
+                  width={item.width}
+                  height={item.height}
+                  alt="Работа"
+                />
               </li>
             ))}
           </ul>
