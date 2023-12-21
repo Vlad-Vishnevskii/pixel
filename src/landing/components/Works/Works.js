@@ -18,7 +18,12 @@ export const Works = () => {
             {WORKS_DATA.map((item) => (
               <li className={`works_item ${item.className}`}>
                 <div className="works_imgWrapper">
-                  <img src={item.img} width={item.width} height={item.height} alt="Работа выпускника" />
+                  <img
+                    src={item.img}
+                    width={item.width}
+                    height={item.height}
+                    alt="Работа выпускника"
+                  />
                 </div>
               </li>
             ))}
