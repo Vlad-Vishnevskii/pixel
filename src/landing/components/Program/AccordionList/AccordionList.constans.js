@@ -44,9 +44,4 @@ export const PROGRAM_LIST = [
     name: 'Оформление работы',
     bg: './images/landingContent/program/program-9.png',
   },
-  {
-    id: 10,
-    name: 'Оформление работы',
-    bg: './images/landingContent/program/program-1.png',
-  },
 ];

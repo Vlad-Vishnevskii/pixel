@@ -1,9 +1,13 @@
 import React from 'react';
 import './Button.style.scss';
 
-export const Button = ({ text, type, className }) => {
+export const Button = ({ text, type, className, onClick }) => {
   return (
-    <button className={`button ${className ? className : ''}`} type={type}>
+    <button
+      onClick={onClick}
+      className={`button ${className ? className : ''}`}
+      type={type}
+    >
       {' '}
       {text}
     </button>
