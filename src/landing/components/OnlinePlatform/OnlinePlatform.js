@@ -43,7 +43,7 @@ export const OnlinePlatform = () => {
         {ONLINE_PLATFORM_SLIDER_DATA.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="onlinePlatform_sliderItem">
-              <img src={item.img} />
+              <img src={item.img} alt="" />
               <p>{item.text}</p>
             </div>
           </SwiperSlide>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { PRINCIPLES_IMAGES } from './Principles.images';
-import { Line } from './assets/Line';
 
 import './Principles.styles.scss';
 

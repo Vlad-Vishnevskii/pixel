@@ -1,9 +1,9 @@
 .feedback {
   padding-top: 16px;
   padding-bottom: 16px;
-  
+
   &_title {
-    margin:  0 0 8px 0;
+    margin: 0 0 8px 0;
     font-family: 'Garet';
     font-size: 24px;
     font-weight: 850;
@@ -14,7 +14,7 @@
   &_text {
     margin-bottom: 40px;
   }
-  
+
   &_text p {
     margin: 0;
     font-size: 18px;
@@ -26,4 +26,100 @@
   &_text p:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  &_curtain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &_curtainBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  &_curtainWrapper {
+    transition: all 0.3s ease-in;
+    opacity: 0;
+  }
+
+  &_curtainName {
+    padding: 0 10px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+  }
+
+  &_curtainArrow {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+    svg {
+      color: #34a3ff;
+    }
+
+    &_left {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.before-after-slider {
+  width: 100%;
+  position: relative;
+}
+
+.before-after-slider__first-photo-container,
+.before-after-slider__second-photo-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.before-after-slider__second-photo-container {
+  top: 0;
+  position: absolute;
+}
+
+.before-after-slider img {
+  max-width: none;
+  width: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.before-after-slider__delimiter {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.before-after-slider__delimiter-icon {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: url('./aseets/polygons.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.before-after-slider__delimiter-img {
+  cursor: pointer;
+  user-select: none;
+}
+
+.animateElement {
+  opacity: 1;
 }
