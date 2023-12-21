@@ -8,7 +8,7 @@
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       width: 151px;
       height: 181px;
       top: -21px;
@@ -21,7 +21,7 @@
 
   &_title {
     margin: 0 0 16px 0;
-    font-family: "Garet";
+    font-family: 'Garet';
     font-size: 24px;
     font-weight: 850;
     line-height: 28px;
@@ -50,5 +50,46 @@
     font-style: italic;
     line-height: 19px;
     letter-spacing: 0.09px;
+  }
+
+  .swiper {
+    padding-bottom: 30px;
+
+    .swiper-slide {
+      width: 320px;
+    }
+
+    .swiper-pagination-bullet {
+      background: #ff9a36;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #414143;
+    }
+  }
+
+  &_sliderItem {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    img {
+      width: 320px;
+      height: 220px;
+      background: #ffffff;
+      border-radius: 12px;
+    }
+
+    p {
+      margin: 0;
+      color: #414143;
+      font-family: 'PT Sans';
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0.06px;
+    }
   }
 }
