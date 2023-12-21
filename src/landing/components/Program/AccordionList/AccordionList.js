@@ -29,7 +29,9 @@ export const AccordionList = () => {
             </AccordionItemButton>
           </AccordionItemHeading>
           <AccordionItemPanel className="accordionList_panel">
-            <img src="./images/landingContent/program/test.png" />
+            <div className="accordionList_content">
+              <img src={item.bg} alt="" />
+            </div>
           </AccordionItemPanel>
         </AccordionItem>
       ))}

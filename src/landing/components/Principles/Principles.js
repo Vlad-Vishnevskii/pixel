@@ -14,9 +14,6 @@ export const Principles = () => {
           или хобби:
         </h2>
         <p className="principles_description">
-          <span className="principles_line">
-            <Line />
-          </span>
           Успех = свобода творчества + крепкий профессиональный фундамент
         </p>
         <h3 className="principles_title2">Наши принципы:</h3>
