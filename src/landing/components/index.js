@@ -20,3 +20,5 @@ export * from './Feedback';
 export * from './InfoBlock';
 export * from './Works';
 export * from './Author';
+export * from './ModalOrder';
+export * from './ModalSuccess';

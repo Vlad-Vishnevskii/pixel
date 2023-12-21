@@ -1,10 +1,18 @@
 import React from 'react';
 import { Button } from '../Button/Button';
 import { CustomInput } from '../CustomInput/CustomInput';
+import { ModalSuccess } from '../ModalSuccess/ModalSuccess';
+import { useBoolean } from '../../hooks';
 
 import './Form.style.scss';
 
-export const Form = () => {
+export const Form = ({ closeModalOrder }) => {
+  const [modalSuccessIsOpen, setSuccessIsOpen] = useBoolean(false);
+
+  const submitHadler = () => {
+    setSuccessIsOpen.on();
+  };
+
   return (
     <div className="form">
       <h2 className="form_title">Записаться на&nbsp;курс</h2>
@@ -27,7 +35,12 @@ export const Form = () => {
         Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;Telegram в&nbsp;течение рабочего
         дня.
       </p>
-      <Button text="Оставить заявку" type="button" />
+      <Button onClick={submitHadler} text="Оставить заявку" type="button" />
+      <ModalSuccess
+        modalIsOpen={modalSuccessIsOpen}
+        closeModal={setSuccessIsOpen.off}
+        closeModalOrder={closeModalOrder}
+      />
     </div>
   );
 };

@@ -1,9 +1,13 @@
 import React from 'react';
 import { HEADER_IMAGES } from './Header.images';
+import { useBoolean } from '../../hooks';
+import { ModalOrder } from '../ModalOrder/ModalOrder';
 
 import './Header.style.scss';
 
 export const Header = () => {
+  const [modalIsOpen, setIsOpen] = useBoolean(false);
+
   return (
     <div className="header">
       <div className="header_rightBg" />
@@ -17,7 +21,11 @@ export const Header = () => {
           height={20}
         />
         <div className="header_orderBtnWrapper">
-          <button className="header_orderBtn" type="button">
+          <button
+            onClick={setIsOpen.on}
+            className="header_orderBtn"
+            type="button"
+          >
             Оставить заявку
           </button>
           <img
@@ -64,6 +72,7 @@ export const Header = () => {
         alt="AI"
       />
       <img className="header_catImg" src={HEADER_IMAGES.CAT} alt="cat" />
+      <ModalOrder modalIsOpen={modalIsOpen} closeModal={setIsOpen.off} />
     </div>
   );
 };
