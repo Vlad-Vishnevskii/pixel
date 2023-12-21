@@ -36,13 +36,13 @@
 
     &::after {
       position: absolute;
-      right: 8px;
+      right: 6px;
       top: 50%;
       transform: translateY(-50%);
       display: inline-block;
       content: '';
-      height: 11px;
-      width: 18px;
+      height: 8px;
+      width: 13px;
       background: url('./assets/arrow.svg');
       background-repeat: no-repeat;
       background-size: contain;
