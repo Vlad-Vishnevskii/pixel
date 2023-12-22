@@ -16,13 +16,13 @@ export const CurtainArrow = ({ className }) => {
         r="14.25"
         fill="white"
         stroke="currentColor"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
       <path
         d="M13.5537 21.1777L19.3898 16.042C19.4779 15.9644 19.4806 15.8281 19.3957 15.7471L13.5537 10.1777"
         stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linecap="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
       />
     </svg>
   );
