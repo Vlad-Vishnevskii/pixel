@@ -69,8 +69,8 @@ export const Author = () => {
           />
 
           <ul className="author_listImage">
-            {AUTHOR_DATA.map((item) => (
-              <li className="author_itemImage">
+            {AUTHOR_DATA.map((item, index) => (
+              <li className="author_itemImage" key={index}>
                 <img
                   src={item.img}
                   width={item.width}
