@@ -69,7 +69,7 @@ export const Feedback = () => {
             <ReactBeforeSliderComponent
               firstImage={FEEDBACK_IMAGES[activeWorkIndex].img2}
               secondImage={FEEDBACK_IMAGES[activeWorkIndex].img1}
-              withResizeFeel={false}
+              withResizeFeel={true}
               delimiterColor="#EDEDED"
             />
           </div>

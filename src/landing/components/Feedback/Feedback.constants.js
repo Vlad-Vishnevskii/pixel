@@ -18,6 +18,15 @@ export const FEEDBACK_IMAGES = [
     },
   },
   {
+    name: 'Работа Евгении Петуховой',
+    img1: {
+      imageUrl: './images/landingContent/feedback/e.petuhova-1.jpg',
+    },
+    img2: {
+      imageUrl: './images/landingContent/feedback/e.petuhova-2.jpg',
+    },
+  },
+  {
     name: 'Работа Крестины Жук',
     img1: {
       imageUrl: './images/landingContent/feedback/k-juk-1.jpg',
