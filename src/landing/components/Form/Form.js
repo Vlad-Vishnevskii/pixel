@@ -30,7 +30,7 @@ export const Form = ({ closeModalOrder }) => {
     } else {
       setIsFormValid.off();
     }
-  }, [stateForm]);
+  }, [isNameFiledValid, isLoginFiledValid, setIsFormValid]);
 
   return (
     <div className="form">
