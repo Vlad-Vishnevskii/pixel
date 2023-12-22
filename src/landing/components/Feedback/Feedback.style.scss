@@ -43,6 +43,7 @@
   }
 
   &_curtainWrapper {
+    width: 100%;
     transition: all 0.3s ease-in;
     opacity: 0;
   }
@@ -78,8 +79,20 @@
 
 .before-after-slider__first-photo-container,
 .before-after-slider__second-photo-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: percentage(calc(301 / 446));
   width: 100%;
   overflow: hidden;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
 }
 
 .before-after-slider__second-photo-container {
