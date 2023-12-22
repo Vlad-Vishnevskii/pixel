@@ -20,7 +20,7 @@
     }
   }
 
-  &.isValid input {
+  &--isValid input {
     border-color: #414143;
   }
 
@@ -29,7 +29,7 @@
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       width: 16px;
       height: 17px;
       top: 50%;

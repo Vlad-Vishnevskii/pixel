@@ -24,6 +24,11 @@
     background-color: #2d98f1;
   }
 
+  &:disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+
   &--border {
     padding: 7px 14px;
     border-radius: 12px;

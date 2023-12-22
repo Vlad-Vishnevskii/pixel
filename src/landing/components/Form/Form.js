@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import cn from 'classnames';
 import { Button } from '../Button/Button';
 import { CustomInput } from '../CustomInput/CustomInput';
 import { ModalSuccess } from '../ModalSuccess/ModalSuccess';
@@ -8,10 +9,28 @@ import './Form.style.scss';
 
 export const Form = ({ closeModalOrder }) => {
   const [modalSuccessIsOpen, setSuccessIsOpen] = useBoolean(false);
+  const [stateForm, setStateForm] = useState({
+    name: '',
+    login: '',
+  });
+
+  const [isFormValid, setIsFormValid] = useBoolean(false);
 
   const submitHadler = () => {
-    setSuccessIsOpen.on();
+    if (isFormValid) {
+      setSuccessIsOpen.on();
+    }
   };
+  const isNameFiledValid = stateForm.name.length > 1;
+  const isLoginFiledValid = stateForm.login.length > 1;
+
+  useEffect(() => {
+    if (isNameFiledValid && isLoginFiledValid) {
+      setIsFormValid.on();
+    } else {
+      setIsFormValid.off();
+    }
+  }, [stateForm]);
 
   return (
     <div className="form">
@@ -22,20 +41,35 @@ export const Form = ({ closeModalOrder }) => {
           type="text"
           name="name"
           placeholder="Имя"
-          className="customInput--name"
+          className={cn('customInput--name', {
+            [`customInput--isValid`]: isNameFiledValid,
+          })}
+          value={stateForm.name}
+          change={setStateForm}
+          required
         />
         <CustomInput
           type="text"
           name="login"
           placeholder="Логин или номер телефона"
-          className="customInput--login"
+          className={cn('customInput--login', {
+            [`customInput--isValid`]: isLoginFiledValid,
+          })}
+          isRequired
+          value={stateForm.login}
+          change={setStateForm}
         />
       </form>
       <p className="form_text">
         Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;Telegram в&nbsp;течение рабочего
         дня.
       </p>
-      <Button onClick={submitHadler} text="Оставить заявку" type="button" />
+      <Button
+        onClick={submitHadler}
+        text="Оставить заявку"
+        type="button"
+        isDisabled={!isFormValid}
+      />
       <ModalSuccess
         modalIsOpen={modalSuccessIsOpen}
         closeModal={setSuccessIsOpen.off}
