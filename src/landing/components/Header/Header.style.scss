@@ -222,7 +222,7 @@
   &_catImg {
     position: absolute;
     z-index: 2;
-    right: 0;
+    left: 20px;
     bottom: 0;
 
     @include vp-359 {
@@ -231,6 +231,8 @@
     }
 
     @media (min-width: 450px) {
+      left: initial;
+      right: 0;
       width: 70%;
       max-width: 377px;
     }
