@@ -7,6 +7,7 @@ import { Microphone } from './assets/Microphone';
 import { NameAuthor } from './assets/NameAuthor';
 import { Video } from '../Video/Video';
 import { AUTHOR_DATA } from './Author.constants';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 export const Author = () => {
   return (
@@ -68,18 +69,22 @@ export const Author = () => {
             type="video/mp4"
           />
 
-          <ul className="author_listImage">
-            {AUTHOR_DATA.map((item, index) => (
-              <li className="author_itemImage" key={index}>
-                <img
-                  src={item.img}
-                  width={item.width}
-                  height={item.height}
-                  alt="Работа"
-                />
-              </li>
-            ))}
-          </ul>
+          <PhotoProvider>
+            <ul className="author_listImage">
+              {AUTHOR_DATA.map((item, index) => (
+                <li className="author_itemImage" key={index}>
+                  <PhotoView src={item.img}>
+                    <img
+                      src={item.img}
+                      width={item.width}
+                      height={item.height}
+                      alt="Работа"
+                    />
+                  </PhotoView>
+                </li>
+              ))}
+            </ul>
+          </PhotoProvider>
         </div>
       </div>
     </section>

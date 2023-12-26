@@ -8,7 +8,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
 const INITIAL_SHOW_COUNT = 8;
-const ITERATION_SHOW_COUNT = 3;
+const ITERATION_SHOW_COUNT = WORKS_DATA.length;
 
 export const Works = () => {
   const [worksLength, setWorksLength] = useState(INITIAL_SHOW_COUNT);
