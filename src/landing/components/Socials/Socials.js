@@ -10,7 +10,7 @@ export const Socials = () => {
         <li className="socials_item" key={item.id}>
           <a
             className="socials_link"
-            href="#/"
+            href={item.href}
             aria-label={item.ariaLabel}
             rel="nofollow noopener noreferrer"
             target="_blank"
