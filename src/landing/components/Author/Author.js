@@ -64,7 +64,7 @@ export const Author = () => {
           <Video
             width={320}
             height={188}
-            src="./video/work-analysis.mp4"
+            src="./video/acquaintance.mp4"
             poster="./images/landingContent/author/poster.png"
             type="video/mp4"
           />
