@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pixel/static/css/main.45c13aee.css",
-    "main.js": "/pixel/static/js/main.d5298a16.js",
+    "main.css": "/pixel/static/css/main.ac71a1cf.css",
+    "main.js": "/pixel/static/js/main.d99a3d5e.js",
     "static/js/787.e852a653.chunk.js": "/pixel/static/js/787.e852a653.chunk.js",
     "static/media/Garet-Heavy.woff": "/pixel/static/media/Garet-Heavy.de0e4b3a3a03b3af9755.woff",
     "static/media/Garet-Heavy.woff2": "/pixel/static/media/Garet-Heavy.c9685f5f4f522d7b7bf8.woff2",
@@ -18,12 +18,12 @@
     "static/media/mobile-left-bg.svg": "/pixel/static/media/mobile-left-bg.41907b8d3a06ef2b1ec6.svg",
     "static/media/polygons.svg": "/pixel/static/media/polygons.a43fc93e3623ff05e434.svg",
     "static/media/arrow.svg": "/pixel/static/media/arrow.b7c86364927ae151a16a.svg",
-    "main.45c13aee.css.map": "/pixel/static/css/main.45c13aee.css.map",
-    "main.d5298a16.js.map": "/pixel/static/js/main.d5298a16.js.map",
+    "main.ac71a1cf.css.map": "/pixel/static/css/main.ac71a1cf.css.map",
+    "main.d99a3d5e.js.map": "/pixel/static/js/main.d99a3d5e.js.map",
     "787.e852a653.chunk.js.map": "/pixel/static/js/787.e852a653.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45c13aee.css",
-    "static/js/main.d5298a16.js"
+    "static/css/main.ac71a1cf.css",
+    "static/js/main.d99a3d5e.js"
   ]
 }
