@@ -161,15 +161,15 @@ export const useReviewTextContent = () => {
       works: [
         {
           id: 0,
-          src: REVIEW_IMAGES.WORK4,
+          src: REVIEW_IMAGES.WORK13,
         },
         {
           id: 2,
-          src: REVIEW_IMAGES.WORK5,
+          src: REVIEW_IMAGES.WORK14,
         },
         {
           id: 3,
-          src: REVIEW_IMAGES.WORK6,
+          src: REVIEW_IMAGES.WORK15,
         },
       ],
     },
