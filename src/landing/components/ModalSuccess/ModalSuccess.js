@@ -34,7 +34,7 @@ export const ModalSuccess = ({ modalIsOpen, closeModal, closeModalOrder }) => {
         <img src={modalSuccesImg} alt="" />
         <h3 className="modalSucces_title">Спасибо за заявку!</h3>
         <p className="modalSucces_description">
-          Пожалуйста, нажмите на кнопку, чтобы наше сообщение не пометилось как
+          Пожалуйста, начните диалог, чтобы наше сообщение не пометилось как
           спам
         </p>
         <Button className="modalSucces_btn" text="Открыть диалог" />
