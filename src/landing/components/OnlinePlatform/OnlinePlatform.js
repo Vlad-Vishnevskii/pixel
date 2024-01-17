@@ -13,7 +13,7 @@ export const OnlinePlatform = () => {
       <div className="container">
         <div className="onlinePlatform_wrapper">
           <h2 className="onlinePlatform_title">
-            Онлайн платформа для&nbsp;комфортного обучения
+            Онлайн-платформа для&nbsp;комфортного обучения
           </h2>
           <div className="onlinePlatform_text">
             <p>

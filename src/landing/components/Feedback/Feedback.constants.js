@@ -27,7 +27,7 @@ export const FEEDBACK_IMAGES = [
     },
   },
   {
-    name: 'Работа Крестины Жук',
+    name: 'Работа Кристины Жук',
     img1: {
       imageUrl: './images/landingContent/feedback/juk-1.jpg',
     },
