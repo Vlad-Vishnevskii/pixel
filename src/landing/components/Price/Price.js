@@ -15,11 +15,11 @@ export const Price = () => {
             <Cat />
           </div>
           <h2 className="price_title">Стоимость курса</h2>
-          <p className="price_titlePrice">36&nbsp;700&nbsp;₽</p>
+          <p className="price_titlePrice">24&nbsp;900&nbsp;₽</p>
         </div>
         <div className="price_installment">
           <p className="price_installmentTitle">Или рассрочка на&nbsp;год</p>
-          <p className="price_installmentPrice">3&nbsp;300&nbsp;₽/&nbsp;мес</p>
+          <p className="price_installmentPrice">2&nbsp;850&nbsp;₽/&nbsp;мес</p>
         </div>
         <ul className="price_list">
           {priceTextContent.map((item) => (

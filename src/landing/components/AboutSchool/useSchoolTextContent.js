@@ -18,7 +18,7 @@ export const useSchoolTextContent = () => {
       description: (
         <>
           Отзывов от&nbsp;реальных людей с&nbsp;работами с&nbsp;курса
-          в&nbsp;нашей группе&nbsp;VK'
+          в&nbsp;нашей группе&nbsp;VK
         </>
       ),
     },
@@ -28,7 +28,7 @@ export const useSchoolTextContent = () => {
       description: (
         <>
           Подписчиков на&nbsp;YouTube и&nbsp;более 300 образовательных видео
-          на&nbsp;нашем канале,
+          на&nbsp;нашем канале
         </>
       ),
     },

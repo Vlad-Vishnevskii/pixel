@@ -8,7 +8,7 @@ export const VideoBlock = () => {
     <section className="videoBlock">
       <div className="container">
         <h2 className="videoBlock_title">
-          Все работы разбираются онлайн на&nbsp;видео эфире
+          Все работы разбираются онлайн на&nbsp;видеоэфире
         </h2>
         <div className="videoBlock_blockTop">
           <p className="videoBlock_text">
