@@ -1,5 +1,7 @@
+import { getAssetsPath } from '../../helpers';
+
 export const SOCIALS_IMAGES = {
-  INSTAGRAM: './images/landingContent/socials/icon-instagram.svg',
-  VK: './images/landingContent/socials/icon-vk.svg',
-  YOUTUBE: './images/landingContent/socials/icon-youtube.svg',
+  INSTAGRAM: getAssetsPath('/images/landingContent/socials/icon-instagram.svg'),
+  VK: getAssetsPath('/images/landingContent/socials/icon-vk.svg'),
+  YOUTUBE: getAssetsPath('/images/landingContent/socials/icon-youtube.svg'),
 };

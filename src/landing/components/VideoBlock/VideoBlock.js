@@ -1,5 +1,6 @@
 import React from 'react';
 import { Video } from '../Video/Video';
+import { getAssetsPath } from '../../helpers';
 
 import './VideoBlock.style.scss';
 
@@ -19,7 +20,9 @@ export const VideoBlock = () => {
             width={320}
             height={188}
             src="./video/work-analysis.mp4"
-            poster="./images/landingContent/video-block/poster.jpg"
+            poster={getAssetsPath(
+              '/images/landingContent/video-block/poster.jpg'
+            )}
             type="video/mp4"
           />
           <p className="videoBlock_text">

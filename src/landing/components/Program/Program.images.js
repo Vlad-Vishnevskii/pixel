@@ -1,1 +1,5 @@
-export const CAT_PROGRAM = './images/landingContent/program/cat.gif';
+import { getAssetsPath } from '../../helpers';
+
+export const CAT_PROGRAM = getAssetsPath(
+  '/images/landingContent/program/cat.gif'
+);

@@ -8,6 +8,7 @@ import { NameAuthor } from './assets/NameAuthor';
 import { Video } from '../Video/Video';
 import { AUTHOR_DATA } from './Author.constants';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { getAssetsPath } from '../../helpers';
 
 export const Author = () => {
   return (
@@ -65,7 +66,7 @@ export const Author = () => {
             width={320}
             height={188}
             src="./video/acquaintance.mp4"
-            poster="./images/landingContent/author/poster.png"
+            poster={getAssetsPath('/images/landingContent/author/poster.png')}
             type="video/mp4"
           />
 

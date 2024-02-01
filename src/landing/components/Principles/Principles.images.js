@@ -1,3 +1,5 @@
+import { getAssetsPath } from '../../helpers';
+
 export const PRINCIPLES_IMAGES = {
-  PENCIL: './images/landingContent/principles/pencil.svg',
+  PENCIL: getAssetsPath('/images/landingContent/principles/pencil.svg'),
 };

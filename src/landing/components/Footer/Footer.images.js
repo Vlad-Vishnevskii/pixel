@@ -1,3 +1,5 @@
+import { getAssetsPath } from '../../helpers';
+
 export const FOOTER_IMAGES = {
-  LOGO: './images/landingContent/logo-blue.svg',
+  LOGO: getAssetsPath('/images/landingContent/logo-blue.svg'),
 };

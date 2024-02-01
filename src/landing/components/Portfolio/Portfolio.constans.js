@@ -1,7 +1,11 @@
+import { getAssetsPath } from '../../helpers';
+
 export const PORTFOLIO_LIST = [
   {
-    portfolio: './images/landingContent/portfolio/portfolio-1.png',
-    avatar: './images/landingContent/portfolio/student.jpg',
+    portfolio: getAssetsPath(
+      '/images/landingContent/portfolio/portfolio-1.png'
+    ),
+    avatar: getAssetsPath('/images/landingContent/portfolio/student.jpg'),
     name: 'Яна Гусева',
   },
 ];

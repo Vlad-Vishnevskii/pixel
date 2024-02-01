@@ -1,0 +1,1 @@
+export { getAssetsPath } from './getAssetsPath';
