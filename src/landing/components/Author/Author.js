@@ -65,7 +65,7 @@ export const Author = () => {
           <Video
             width={320}
             height={188}
-            src="./video/acquaintance.mp4"
+            src={getAssetsPath('/video/acquaintance.mp4')}
             poster={getAssetsPath('/images/landingContent/author/poster.png')}
             type="video/mp4"
           />

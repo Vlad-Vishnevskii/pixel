@@ -19,7 +19,7 @@ export const VideoBlock = () => {
           <Video
             width={320}
             height={188}
-            src="./video/work-analysis.mp4"
+            src={getAssetsPath('/video/work-analysis.mp4')}
             poster={getAssetsPath(
               '/images/landingContent/video-block/poster.jpg'
             )}

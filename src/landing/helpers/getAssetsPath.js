@@ -1,3 +1,3 @@
 export const getAssetsPath = (path) => {
-  return `${document.location.pathname}/${path}`.replace(/\/+/g, '/');
+  return `${process.env.PUBLIC_URL}/${path}`.replace(/\/+/g, '/');
 };
