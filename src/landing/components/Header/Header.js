@@ -13,13 +13,9 @@ export const Header = () => {
       <div className="header_rightBg" />
       <div className="header_leftBg" />
       <div className="header_top">
-        <img
-          className="header_logo"
-          src={HEADER_IMAGES.LOGO}
-          alt="Pixel"
-          width={72}
-          height={20}
-        />
+        <a className="header_logo" href="/">
+          <img src={HEADER_IMAGES.LOGO} alt="Pixel" width={72} height={20} />
+        </a>
         <div className="header_orderBtnWrapper">
           <button
             onClick={setIsOpen.on}
